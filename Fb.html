@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            background: linear-gradient(to bottom, #fffaf0, #f5e6cc);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            color: #5c4033;
+        }
+
+        /* janela */
+        .window {
+            width: 90%;
+            max-width: 900px;
+            border: 3px solid #c8a97e;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #fff8ee;
+            box-shadow: 0 8px 25px rgba(120, 80, 40, 0.25);
+        }
+
+        /* topo */
+        .title-bar {
+            background: linear-gradient(to right, #c8a97e, #e8d2b0);
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #4b2e1f;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #d8b98f;
+        }
+
+        /* menu */
+        nav {
+            background: #f9f0df;
+            border-bottom: 1px solid #ead8b7;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            padding: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5c4033;
+            background: #fff7ea;
+            padding: 8px 14px;
+            border-radius: 10px;
+            border: 2px solid #e2c79d;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #f3ddbe;
+            transform: translateY(-2px);
+        }
+
+        /* layout */
+        main {
+            padding: 30px;
+        }
+
+        section {
+            background: #fffdf8;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #f0dec0;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #7a5230;
+        }
+
+        #text {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #6e5845;
+        }
+
+        /* formulário */
+        .feedback-form textarea {
+            width: 100%;
+            height: 140px;
+            padding: 15px;
+            border-radius: 12px;
+            border: 2px solid #e6cda9;
+            background: #fffaf2;
+            font-family: Tahoma, sans-serif;
+            font-size: 15px;
+            resize: vertical;
+            outline: none;
+            transition: 0.3s;
+            color: #5c4033;
+        }
+
+        .feedback-form textarea:focus {
+            border-color: #c8a97e;
+            box-shadow: 0 0 8px rgba(200, 169, 126, 0.5);
+        }
+
+        /* botão */
+        button {
+            margin-top: 18px;
+            background: linear-gradient(to bottom, #f5dfba, #e7c89c);
+            border: none;
+            padding: 12px 22px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            color: #5a3d2b;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(100, 70, 40, 0.15);
+        }
+
+        button:hover {
+            background: linear-gradient(to bottom, #efd3a7, #ddb47f);
+            transform: scale(1.03);
+        }
+
+        /* rodapé */
+        footer {
+            text-align: center;
+            padding: 16px;
+            background: #c8a97e;
+            color: #fffaf0;
+            font-size: 14px;
+            border-top: 2px solid #b88f63;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="window">
+
+        <div class="title-bar">
+            <span>💌 Feedback</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+
+                <h3>Compartilhe sua experiência</h3>
+
+                <p id="text">
+                    Sua opinião é muito importante para nós 💖
+                </p>
+
+                <div class="feedback-form">
+
+                    <textarea 
+                        id="feedbackInput" 
+                        placeholder="Digite seu feedback aqui..."
+                    ></textarea>
+
+                    <button type="button">
+                        Enviar Feedback
+                    </button>
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>feito por Isaac, Ian, Rafael e Lucas</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

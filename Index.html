@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookGil</title>
+  <style>
+    /* CORPO DA PÁGINA */
+    body {
+      background-color: #f5f1ea;
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* CABEÇALHO */
+    header {
+      background-color: #e8dcc8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* LOGO */
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #5a3e1b;
+    }
+
+    /* NAVEGAÇÃO */
+    nav {
+      background-color: #ddd0b8;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: #5a3e1b;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* CARDS DOS LIVROS */
+    .livros {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    .box {
+      background: white;
+      padding: 15px;
+      width: 220px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .preco {
+      color: #b26b2c;
+      font-weight: bold;
+      display: block;
+      margin: 10px 0;
+    }
+    button {
+      background-color: #8c7b5a;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6b5a3e;
+    }
+
+    /* FORMULÁRIO */
+    .formulario {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: left;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .checkbox input {
+      width: auto;
+    }
+    
+    small {
+      font-size: 12px;
+      color: #666;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* AVISO DE SEGURANÇA */
+    .aviso {
+      background-color: #e8dcc8;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    /* LISTA */
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin: 20px auto;
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #e8dcc8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #5a3e1b;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO SEMÂNTICO -->
+  <header>
+    <div class="logo">&#x1F4D6 BookGil</div>
+    <p><strong>Descubra os ensinamentos que iluminam mentes e transformam vidas.</strong></p>
+  </header>
+
+  <!-- NAVEGAÇÃO -->
+  <nav>
+    <a href="Fb.html">Feedback</a>
+    <a href="login.html">cadastro</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <h2>Coleção Sagrada</h2>
+    <p><strong>"A paz vem de dentro de você."</strong></p>
+
+    <!-- LIVROS -->
+    <div class="livros">
+      <div class="box">
+        <img src="https://www.edipro.com.br/wp-content/uploads/2021/08/CAPA_Dhammapada_1e2r_HOT-aplicado.jpg" alt="Livro 1">
+        <p><b>O Caminho do Despertar</b></p>
+        <p>Ensinamentos fundamentais sobre a iluminação</p>
+        <button>baixe aqui em pdf</button>
+      </div>
+
+      <div class="box">
+        <img src="https://storage.googleapis.com/images.uiclap.com/capa/ua39387.jpg" alt="Livro 2">
+        <p><b>Sabedoria Dourada</b></p>
+        <p>Reflexões sobre compaixão e paz interior</p>
+        <button>baixe aqui em pdf</button>
+      </div>
+
+      <div class="box">
+        <img src="https://a-static.mlcdn.com.br/800x800/livro-a-essencia-de-buda/cirandacomlivros/9788564658240/509a1e3bf306cbc30f6a0beb8aceea31.jpg" alt="Livro 3">
+        <p><b>Meditações Eternas</b></p>
+        <p>Práticas contemplativas para serenidade</p>
+        <button>baixe aqui em pdf</button>
+      </div>
+
+      <div class="box">
+        <img src="https://livrariavozes.vtexassets.com/arquivos/ids/230178/https---vozescentral.jpg?v=638893844257470000" alt="Livro 4">
+        <p><b>A Grande Compaixão</b></p>
+        <p>Lições sobre bondade e amor universal</p>
+        <button>baixe aqui em pdf</button>
+      </div>
